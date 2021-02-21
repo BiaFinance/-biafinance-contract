@@ -1,7 +1,7 @@
-![pandayield](https://cdn-images-1.medium.com/max/800/1*2Yh9-c1ySvZ16S2gKPH0Mg.png)
-# PandaYield
+🍺
+# BiaFinance
 
-https://pandayield.com/ - The most loved yield farming on BSC.
+https://Bia.Finance - The best yield farming on BSC for more then beer money...
 
 ## Deployer
 - Address - https://bscscan.com/address/0x8557d80FeB424BAf5363FE5287a3EA4CeEc0C4be
