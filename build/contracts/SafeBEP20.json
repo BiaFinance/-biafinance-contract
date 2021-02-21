@@ -6418,7 +6418,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-21T06:04:26.373Z",
+  "updatedAt": "2021-02-21T06:30:42.734Z",
   "devdoc": {
     "details": "Wrappers around BEP20 operations that throw on failure (when the token contract returns false). Tokens that return no value (and instead revert or throw on failure) are also supported, non-reverting calls are assumed to be successful. To use this library you can add a `using SafeBEP20 for IBEP20;` statement to your contract, which allows you to call the safe operations as `token.safeTransfer(...)`, etc.",
     "kind": "dev",

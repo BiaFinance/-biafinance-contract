@@ -35699,6 +35699,107 @@
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
   "networks": {
+    "56": {
+      "events": {
+        "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "pid",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Deposit",
+          "type": "event"
+        },
+        "0xbb757047c2b5f3974fe26b7c10f732e7bce710b0952a71082702781e62ae0595": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "pid",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "EmergencyWithdraw",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xf279e6a1f5e320cca91135676d9cb6e44ca8a08c0b88342bcdb1144f6511b568": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "pid",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "Withdraw",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x82D17267760c4fB818D77b38B70D91f245Ea1e56",
+      "transactionHash": "0x0edab9674de9a1b7954e79045cf229b7adc380bec27b785e090bca08a320da89"
+    },
     "5777": {
       "events": {
         "0x90890809c654f11d6e72a28fa60149770a0d11ec6c92319d6ceb2bb0a4ea1a15": {
@@ -35802,7 +35903,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-21T06:04:46.775Z",
+  "updatedAt": "2021-02-21T06:32:44.695Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

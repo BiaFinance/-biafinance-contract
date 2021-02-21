@@ -1,5 +1,3 @@
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonic = "avast natural ghey bird manic supper beehive indexsuit nanny dancer flubber config...";
 
 module.exports = {
     // Uncommenting the defaults below
@@ -13,14 +11,6 @@ module.exports = {
         host: "127.0.0.1",
         port: 7545,
         network_id: 5777
-      },
-      xDai: {
-        provider: () => new HDWalletProvider(mnemonic, 'https://xdai.poanetwork.dev'),
-        network_id: 100,
-        confirmations: 2,
-        gas: 500000,
-        gasPrice: 1000000000,
-        skipDryRun: true
       },
     //  test: {
     //    host: "127.0.0.1",
