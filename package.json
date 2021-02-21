@@ -7,13 +7,13 @@
     "compile": "truffle compile --network development",
     "test": "npx builder test",
     "coverage": "npx builder coverage",
-    "flatten": "truffle-flattener contracts/Timelock.sol > contracts/flattened/Timelock.sol && truffle-flattener contracts/SmartChef.sol > contracts/flattened/SmartChef.sol && truffle-flattener contracts/LeafBar.sol > contracts/flattened/LeafBar.sol && truffle-flattener contracts/BambooToken.sol > contracts/flattened/BambooToken.sol && truffle-flattener contracts/PandaLoverToken.sol > contracts/flattened/PandaLoverToken.sol && truffle-flattener contracts/MasterChef.sol > contracts/flattened/MasterChef.sol"
-
+    "flatten": "truffle-flattener contracts/Timelock.sol > contracts/flattened/Timelock.sol && truffle-flattener contracts/SmartChef.sol > contracts/flattened/SmartChef.sol && truffle-flattener contracts/HOPSBar.sol > contracts/flattened/HOPSBar.sol && truffle-flattener contracts/BeerToken.sol > contracts/flattened/BeerToken.sol && truffle-flattener contracts/BeerLoverToken.sol > contracts/flattened/BeerLoverToken.sol && truffle-flattener contracts/MasterChef.sol > contracts/flattened/MasterChef.sol"
   },
   "dependencies": {
     "@openzeppelin/test-helpers": "^0.5.6",
     "@pancakeswap/pancake-swap-lib": "^0.0.1",
     "@truffle/codec": "^0.9.4",
+    "@truffle/hdwallet-provider": "^1.2.2",
     "bignumber.js": "^9.0.1",
     "truffle": "^5.1.58",
     "truffle-flattener": "^1.5.0"

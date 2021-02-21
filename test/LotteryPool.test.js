@@ -1,7 +1,7 @@
 const { expectRevert, time } = require('@openzeppelin/test-helpers');
 const { assert } = require('chai');
-const CakeToken = artifacts.require('BambooToken');
-const SyrupBar = artifacts.require('LeafBar');
+const CakeToken = artifacts.require('BeerToken');
+const SyrupBar = artifacts.require('HOPSBar');
 const MasterChef = artifacts.require('MasterChef');
 const MockBEP20 = artifacts.require('libs/MockBEP20');
 const LotteryRewardPool = artifacts.require('LotteryRewardPool');

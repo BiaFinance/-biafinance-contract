@@ -1,26 +1,26 @@
-const BambooToken = artifacts.require("BambooToken");
-const PandaLoverToken = artifacts.require("PandaLoverToken");
-const LeafBar = artifacts.require("LeafBar");
+const BeerToken = artifacts.require("BeerToken");
+const BeerLoverToken = artifacts.require("BeerLoverToken");
+const HOPSBar = artifacts.require("HOPSBar");
 const MasterChef = artifacts.require("MasterChef");
 const SmartChef = artifacts.require("SmartChef");
 const Timelock = artifacts.require("Timelock");
-let admin = "0x8557d80FeB424BAf5363FE5287a3EA4CeEc0C4be"
+let admin = "0x0Fe18f369c7F34208922cAEBbd5d21E131E44692"
 let startBlock = 4684770
-let pandaLoverStartBlock = 4742360
-let pandaLoverEndBlock = pandaLoverStartBlock + 432000 // for 15 days
-let usePandaLover = true
-let pandaLoverRewardPerBlock = '25000000000000000' // 0.025 BBOO per block
+let BeerLoverStartBlock = 4742360
+let BeerLoverEndBlock = BeerLoverStartBlock + 432000 // for 15 days
+let useBeerLover = true
+let BeerLoverRewardPerBlock = '25000000000000000' // 0.025 BEER per block
 
 
 module.exports = async function (deployer) {
   // 1st deployment
   const Time = await deployer.deploy(Timelock, admin, 43200)
-  const Bamboo = await deployer.deploy(BambooToken)
-  const Leaf = await deployer.deploy(LeafBar, Bamboo.address)
-  const Master = await deployer.deploy(MasterChef, Bamboo.address, Leaf.address, admin, "500000000000000000", startBlock)
-  if (usePandaLover) {
-    const PandaLover = await deployer.deploy(PandaLoverToken)
-    const SmartPandaLover = await deployer.deploy(SmartChef, PandaLover.address, Bamboo.address, pandaLoverRewardPerBlock, pandaLoverStartBlock, pandaLoverEndBlock)
+  const Beer = await deployer.deploy(BeerToken)
+  const HOPS = await deployer.deploy(HOPSBar, Beer.address)
+  const Master = await deployer.deploy(MasterChef, Beer.address, HOPS.address, admin, "500000000000000000", startBlock)
+  if (useBeerLover) {
+    const BeerLover = await deployer.deploy(BeerLoverToken)
+    const SmartBeerLover = await deployer.deploy(SmartChef, BeerLover.address, Beer.address, BeerLoverRewardPerBlock, BeerLoverStartBlock, BeerLoverEndBlock)
   }
-  Leaf.transferOwnership(Master.address)
+  HOPS.transferOwnership(Master.address)
 }

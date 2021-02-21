@@ -8,12 +8,12 @@ https://Bia.Finance - The best yield farming on BSC for more then beer money...
 
 ## Contracts
 
-- BBOO Token - https://bscscan.com/address/0xd909840613fCb0fADC6ee7E5eCF30cDEf4281a68
-- LeafBar Token - https://bscscan.com/address/0x3cc5Ca16135070266153013a3606F967519F74E2
-- MasterChef - https://bscscan.com/address/0x51f015e3dEA234039fB536C358781118f36f1745
-- SmartPool - https://bscscan.com/address/0x76FCeffFcf5325c6156cA89639b17464ea833ECd
-- PandaLover Token - https://bscscan.com/address/0xa8E902289c8bad03144e40a439E825de6665613A
-- Timelock - https://bscscan.com/address/0x69C664f43A7b965BAF28Fa3AA3fa9De3398508D3
+- BEER Token - https://bscscan.com/address/0xF47eb2CD6FA22693cab61cB9119CBC785a34c2E5
+- HOPSBar Token - https://bscscan.com/address/0xE8E9069d5Cac101a887B9E8063822fd6e7f14371
+- MasterChef - https://bscscan.com/address/0x8974EA0A01c6D15731Af4b92852967Fd0f0E8f0e
+- SmartPool - https://bscscan.com/address/0x387BCE06951B9195d1Baf87a7417D46fe9F48abE
+- BeerLover Token - https://bscscan.com/address/0xd539E136Ecd3393896b84672A5B2A6e594231125
+- Timelock - https://bscscan.com/address/0xe110c02A527241DC70312B8055e8D26FDB6eb0d2
 
 ### (All contracts have been verified on https://bscscan.com)
 

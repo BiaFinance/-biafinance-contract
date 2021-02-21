@@ -5,19 +5,19 @@ import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol";
 import "@pancakeswap/pancake-swap-lib/contracts/token/BEP20/SafeBEP20.sol";
 import "@pancakeswap/pancake-swap-lib/contracts/access/Ownable.sol";
 
-import "./BambooToken.sol";
-import "./LeafBar.sol";
+import "./BeerToken.sol";
+import "./HOPSBar.sol";
 
 import "@nomiclabs/buidler/console.sol";
 
 interface IMigratorChef {
-    // Perform LP token migration from legacy PandaYield to BambooToken.
+    // Perform LP token migration from legacy PandaYield to BeerToken.
     // Take the current LP token address and return the new LP token address.
     // Migrator should have full access to the caller's LP token.
     // Return the new LP token address.
     //
     // XXX Migrator must have allowance access to PandaYield LP tokens.
-    // BambooToken must mint EXACTLY the same amount of BambooToken LP tokens or
+    // BeerToken must mint EXACTLY the same amount of BeerToken LP tokens or
     // else something bad will happen. Traditional PandaYield does not
     // do that so be careful!
     function migrate(IBEP20 token) external returns (IBEP20);
@@ -26,7 +26,7 @@ interface IMigratorChef {
 // MasterChef is the master of Cake. He can make Cake and he is a fair guy.
 //
 // Note that it's ownable and the owner wields tremendous power. The ownership
-// will be transferred to a governance smart contract once BAMBOO is sufficiently
+// will be transferred to a governance smart contract once Beer is sufficiently
 // distributed and the community can show to govern itself.
 //
 // Have fun reading it. Hopefully it's bug-free. God bless.
@@ -59,13 +59,13 @@ contract MasterChef is Ownable {
         uint256 accCakePerShare; // Accumulated CAKEs per share, times 1e12. See below.
     }
 
-    // The BAMBOO TOKEN!
-    BambooToken public cake;
-    // The LEAF TOKEN!
-    LeafBar public syrup;
+    // The Beer TOKEN!
+    BeerToken public cake;
+    // The HOPS TOKEN!
+    HOPSBar public syrup;
     // Dev address.
     address public devaddr;
-    // BAMBOO tokens created per block.
+    // Beer tokens created per block.
     uint256 public cakePerBlock;
     // Bonus muliplier for early cake makers.
     uint256 public BONUS_MULTIPLIER = 1;
@@ -78,7 +78,7 @@ contract MasterChef is Ownable {
     mapping(uint256 => mapping(address => UserInfo)) public userInfo;
     // Total allocation points. Must be the sum of all allocation points in all pools.
     uint256 public totalAllocPoint = 0;
-    // The block number when BAMBOO mining starts.
+    // The block number when Beer mining starts.
     uint256 public startBlock;
 
     event Deposit(address indexed user, uint256 indexed pid, uint256 amount);
@@ -90,8 +90,8 @@ contract MasterChef is Ownable {
     );
 
     constructor(
-        BambooToken _cake,
-        LeafBar _syrup,
+        BeerToken _cake,
+        HOPSBar _syrup,
         address _devaddr,
         uint256 _cakePerBlock,
         uint256 _startBlock

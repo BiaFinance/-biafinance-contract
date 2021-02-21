@@ -1,10 +1,10 @@
 const { expectRevert, time } = require('@openzeppelin/test-helpers');
 const ethers = require('ethers');
-const CakeToken = artifacts.require('BambooToken');
+const CakeToken = artifacts.require('BeerToken');
 const MasterChef = artifacts.require('MasterChef');
 const MockBEP20 = artifacts.require('libs/MockBEP20');
 const Timelock = artifacts.require('Timelock');
-const SyrupBar = artifacts.require('LeafBar');
+const SyrupBar = artifacts.require('HOPSBar');
 
 function encodeParameters(types, values) {
     const abi = new ethers.utils.AbiCoder();
